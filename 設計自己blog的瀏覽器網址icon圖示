@@ -1,0 +1,28 @@
+http://phoenix66600.pixnet.net/blog/post/71264261-%E8%A8%AD%E8%A8%88%E8%87%AA%E5%B7%B1blog%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E7%B6%B2%E5%9D%80icon%E5%9C%96%E7%A4%BA
+
+icon的圖示顯示在網址列前的是16×16 pixel，要做大一點也是可以，像32×32 pixel，
+但個人還是建議做剛剛好1:1就好，圖片格式可用 ico、png、gif、jpg 等格式均可。
+
+Ricky個人是建議用png或png做好後轉成ico為佳，做透明背景才好看，
+因為png是全彩的，而不建議用gif是因為gif是256色，
+如果不是很會處理gif圖，容易邊緣會有鋸齒，或去背不乾淨等，當然如果你是圖像高手就例外。
+
+做好了icon後，將它上傳至網頁空間，並將以下語法貼至網頁原始碼 <head> 與 </head> 之間，圖片名稱以favicon暫稱。
+
+.ico語法1：
+<link rel="shortcut icon" href="圖示網址/favicon.ico" />
+
+.ico語法2：
+<link rel="icon" href="圖示網址/favicon.ico" type="image/ico" />
+
+.png語法：
+<link rel="icon" href="圖示網址/favicon.png" type="image/ico" />
+
+.gif語法：
+<link rel="icon" href="圖示網址/favicon.gif" type="image/ico" />
+
+.jpg語法：
+<link rel="icon" href="圖示網址/favicon.jpg" type="image/ico" />
+
+目前測試在Firefox3、Opera9、Netscape8、Maxthon2 (IE核心)均可正常顯示，
+唯獨IE7一直顯示不出來，可是同樣是用IE核心的Maxthon卻可以，真怪！
